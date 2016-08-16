@@ -1,0 +1,2 @@
+export const CREATE_JOB = 'CREATE_JOB';
+export const LOAD_JOBS_SUCCESS = 'LOAD_JOBS_SUCCESS';

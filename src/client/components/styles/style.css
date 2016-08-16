@@ -1,0 +1,29 @@
+#app {
+  font: 14px;
+  color: #4d4d4d;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.job-list-container {
+  overflow: auto;
+}
+
+.job-list-container h2{
+  text-align: center;
+  overflow: auto;
+}
+
+.job-list-element {
+  padding: 13px 7px 25px 20px;
+  margin: 3px 0px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+a.active {
+  color: orange;
+}
+
+nav {
+  padding-top: 20px;
+}
