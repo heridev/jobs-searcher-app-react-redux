@@ -1,6 +1,8 @@
 ### Technologies used in this repository:
 
 - React with Redux.
+- React-router(To control different pages and sections).
+- whatwg-fetch (to fetch )
 - Babel(transpiling via babel).
 - Webpack(bundling dependencies).
 - ESLint (linting error via eslint).
@@ -21,3 +23,7 @@ http://jobs-api-rails-5.herokuapp.com/jobs
 
 You can find the backend repository in the url bellow:
 https://github.com/heridev/redux-api-backend-jobs
+
+### Screenshots:
+
+![Alt Text](http://g.recordit.co/sVGQ5uBqyQ.gif)
