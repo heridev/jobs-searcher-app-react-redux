@@ -6,7 +6,7 @@ const JobListRow = ({job}) => {
   return(
     <div className="col-md-4">
       <div className="job-list-element">
-        <Link to="jobs">
+        <Link to={`/jobs/${job.id}`}>
           <p><strong>{job.title}</strong></p>
         </Link>
         <p>Location</p>
@@ -14,7 +14,7 @@ const JobListRow = ({job}) => {
       </div>
     </div>
   );
-}
+};
 
 JobListRow.propTypes = {
   job: PropTypes.object.isRequired

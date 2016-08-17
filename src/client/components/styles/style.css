@@ -5,13 +5,19 @@
   margin: 0 auto;
 }
 
+.homepage {
+  text-align: center;
+}
+
 .job-list-container {
   overflow: auto;
 }
 
+.job-detail-page {
+}
+
 .job-list-container h2{
   text-align: center;
-  overflow: auto;
 }
 
 .job-list-element {

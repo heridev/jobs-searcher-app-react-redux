@@ -35,7 +35,7 @@ function mapDispatchToProps(dispatch) {
 
 JobPageList.propTypes = {
   jobs: PropTypes.array.isRequired,
-  actions: PropTypes.array.isRequired
+  actions: PropTypes.object.isRequired
 };
 
 export default connect(

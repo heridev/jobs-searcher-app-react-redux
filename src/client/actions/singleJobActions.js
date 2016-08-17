@@ -1,13 +1,17 @@
 import * as types from './actionTypes';
 import toastr from 'toastr';
 
-export function loadJobsSuccess(jobs) {
-  return { type: types.LOAD_JOBS_SUCCESS, jobs: jobs};
+export function createJob(job) {
+  return { type: types.CREATE_JOB, job };
 }
 
-export function loadJobs() {
+export function retrieveJobSuccess(job) {
+  return { type: types.RETRIEVE_JOB_SUCCESS, job };
+}
+
+export function findJob(jobId) {
   return function(dispatch, getState) {
-    let url = "http://jobs-api-rails-5.herokuapp.com/jobs";
+    let url = "http://jobs-api-rails-5.herokuapp.com/jobs/" + jobId;
 
     return fetch(url)
            .then(function(result) {
@@ -19,12 +23,11 @@ export function loadJobs() {
              toastr.error('An error ocurred while fetching available jobs', 'Error!');
            })
            .then(function(jsonResult) {
-             dispatch(loadJobsSuccess(jsonResult));
+             dispatch(retrieveJobSuccess(jsonResult));
            })
            .catch(function(err) {
-             toastr.error('An error ocurred while fetching available jobs', 'Error!');
+             toastr.error('An error ocurred while fetching available jobs', 'Error catch!');
            });
-  };
+    };
 }
-
 

@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 import {Provider} from 'react-redux';
 import configureStore from '.././store/configureStore';
-import {loadJobs} from '.././actions/jobActions';
+import {findJob} from '.././actions/singleJobActions';
 
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
