@@ -10,7 +10,9 @@
     "lint": "node_modules/.bin/esw webpack.config.* src",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/setupTestSuite.js \"src/specs/**/*.spec.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "heriberto perez magaña",
   "license": "ISC",
@@ -26,7 +28,8 @@
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
     "toastr": "2.1.2",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
@@ -65,5 +68,6 @@
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
-  }
+  },
+  "snyk": true
 }
